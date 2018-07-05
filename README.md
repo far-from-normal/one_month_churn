@@ -23,10 +23,10 @@ Data was initially scaled using the StandardScaler for logistic regression only 
 In the /plots directory, the following images of confusion matrices should appear:
 
 Logisitic regression classifier:
-![Alt text](plots/logistic_regression_confusion_matrix.png?raw=true "Logisitic regression classifier")
+![img1](plots/logistic_regression_confusion_matrix.png)
 
 Random forest classifier:
-![Alt text](plots/random_forest_confusion_matrix.png?raw=true "Random forest classifier")
+![img2](plots/random_forest_confusion_matrix.png)
 
 
 ## Authors
