@@ -1,4 +1,4 @@
-# one_month_churn_analysis
+# One Month Churn
 
 This is a script that predicts whether or not a customer will churn or not after 30 days. The csv data files provided include a training (labeled: whether the customer churned or not) 'dataset_train.csv' and test (unlabeled) 'dataset_test.csv' set. Otherwise, the names of features of the datasets are unknown. However, it is apparent that some of the features are categorical in the midst of mostly continuous features.
 
