@@ -12,15 +12,15 @@ This project only requires a base installation of Python 3.5, numpy, pandas, skl
 
 ## Comments on the data
 
-I chose to model the data using two different algorithms since we do not know whether the decision boundary is linear or non-linear. I use logistic regression and a random forest. Since the dataset is imbalanced (5.15% monthly churn), I chose to train by optimizing the F1-score instead of accuracy. 
+I chose to model the data using two different algorithms since we do not know whether the decision boundary is linear or non-linear: logistic regression and random forest. Since the dataset is imbalanced (5.15% monthly churn), I chose to train by optimizing the F1-score instead of accuracy. 
 
-To better deal with class imablance of the churn rate, for both algorithms, class weights were balanced along with other hyperparamteres were used in a GridSearchCV. The set of hyperparamterers that maximized the F1-score was chosen as the best classifier. Training was performed with 10-fold cross validation.
+To better deal with class imablance of the churn rate, for both algorithms, class weights were 'balanced'. Other hyperparamters selected with GridSearchCV. The set of hyperparamterers that maximized the F1-score was chosen as the best classifier. Training was performed with 10-fold cross validation.
 
 Data was initially scaled using the StandardScaler for logistic regression only but for both classifiers, categorical features were one-hot encoded. 
 
 ## Expected results
 
-In the /plots directory, the following images of confusion matrices should appear:
+In the plots/ directory, the following images of confusion matrices should appear:
 
 Logisitic regression classifier:
 ![img1](plots/logistic_regression_confusion_matrix.png)
