@@ -35,7 +35,7 @@ from sklearn.pipeline import Pipeline
 
 def PlotConfusionMatrix(y_test,y_pred,fig_name):
 
-    cm = confusion_matrix(y_train, y_pred)
+    cm = confusion_matrix(y_test, y_pred)
     cm_norm = 100 * cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
     print(cm_norm)
 
